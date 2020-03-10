@@ -31,7 +31,6 @@ public class Steps {
     public void Enter_the_Username_user_and_Password_password(String arg1, String arg2) throws Throwable {
     	driver.findElement(By.name("uid")).sendKeys(arg1);					
         driver.findElement(By.name("password")).sendKeys(arg2);					
-
     }
 
     @Then("^Reset the credential$")					
