@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features = "Features", 
 									glue = { "StepDefinition" }, 
 									tags = { "@UpdateProfile" }, 
-									plugin = { "html:target/cucumber-reports/cucumber-pretty","html:target/cucumber-html-report" })
+									plugin = { "html:target/cucumber-html-report" })
 public class Runner {
 
 }
