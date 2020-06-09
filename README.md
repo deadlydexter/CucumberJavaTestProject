@@ -17,7 +17,7 @@
         + Junit
       
     - Create a Feature file
-        + Create a ```features``` folder in the root directory and create a ```MyTest.feature```` file.
+        + Create a ```features``` folder in the root directory and create a ```MyTest.feature``` file.
         + Install the Cucumber Eclipse Plugin by Going to -- Helps->Install New Software-> ```cucumber plugin```
     - Create a Runner File
         + ``` Java
@@ -36,7 +36,7 @@
         	```
       
      - Create step definitions file 
-        + Create a 'StepDefinition' package and then 'Steps.java' script file in it.
+        + Create a 'StepDefinition' package and then ```Steps.java``` script file in it.
      - Running the Test
         + Right click on the runner script ```Runner.java``` and run as JUnit Test.
           
