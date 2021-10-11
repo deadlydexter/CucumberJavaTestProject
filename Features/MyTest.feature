@@ -1,22 +1,7 @@
 Feature: Reset functionality on login page of Application
 
-  Scenario: Verification of Reset button
-    Given Open the Firefox and launch the application
-    When Enter the Username and Password
-    Then Reset the credential
 
-  Scenario Outline: Verification of Reset button with outline
-    Given Open the Firefox and launch the application
-    When Enter the Username <username> and Password <password>
-    Then Reset the credential
-
-    Examples:
-      | username | password  |
-      | User1    | password1 |
-      | User2    | password2 |
-      | User3    | password3 |
-
-  @UpdateProfile
+  @NON-UI
   Scenario Outline: Check if String is Palindrome
     Given I entered word <wordToTest>
     When I test it for Palindrome
@@ -27,5 +12,9 @@ Feature: Reset functionality on login page of Application
       | "Coin"     | "false" |
       | "Space"    | "false" |
       | "racecar"  | "true"  |
-  
 
+  @UI
+  Scenario: Check valid login
+    Given user is on Login Page
+    When user has provided valid credentials
+    Then user should be able to login
